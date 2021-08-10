@@ -13,6 +13,10 @@ public class VarArgsDemo {
 class Student{
 	String[] subjects;
 	
+//	public Student(String[] subjects) {
+//		this.subjects = subjects;
+//	}
+	
 	public Student(String... subjects) {
 		this.subjects = subjects;
 	}

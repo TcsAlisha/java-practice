@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArraysDemo {
 	public static void main(String[] args) {
-		
+		EnhancedForLoopDemo();
 	}
 	public static void EnhancedForLoopDemo() {
 		int[] numbers = {3,4,-1,2,6};
