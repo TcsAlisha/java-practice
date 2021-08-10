@@ -11,7 +11,7 @@ public class Gymnasium {
 	}
 	private static void createUsers() {
 		for (int i = 0; i < 10; i++) {
-			User u1 = new User("Ram",433234342L,(byte)(10*i));
+			User u1= new User("Ram",987654321, (byte)(10*i));
 //			u1.setName("Madhu" + i);
 //			u1.setAge((byte)(10*i));
 			users.add(u1);
