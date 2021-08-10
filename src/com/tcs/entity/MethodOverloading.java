@@ -5,7 +5,7 @@ public class MethodOverloading {
 		User1 user1 = new Employee1();
 		user1.work();
 		user1.work(4);
-		user1.work("Hello");
+		user1.work("9");
 		
 	}
 }
@@ -25,9 +25,11 @@ class User1{
 class Employee1 extends User1{
 	@Override
 	public void work() {
-		
-		System.out.println("Working");
+		System.out.println("Employee is working");
+	}
 	
-	
+	//overload
+	public void work (boolean duration) {
+		System.out.println("user is working for " +duration+ "hours ");
 	}
 }

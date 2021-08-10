@@ -8,9 +8,11 @@ public class ArraysDemo {
 	}
 	public static void EnhancedForLoopDemo() {
 		int[] numbers = {3,4,-1,2,6};
-		for (int number:numbers) {
-			
-		}
+		for (int number:numbers)  {
+			if(number%2==0) {
+				System.out.println(number);
+			}
+	}
 	}
 	public static void demo1() {
 		int[] numbers = new int[10];
