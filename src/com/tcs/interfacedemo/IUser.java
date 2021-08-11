@@ -1,5 +1,5 @@
 package com.tcs.interfacedemo;
 
-public class IUser {
+public interface IUser extends IStaff {
 
 }

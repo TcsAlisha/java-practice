@@ -5,7 +5,6 @@ public class EceptionDemo {
 		try {
 			demo2();
 		} catch (MyCheckedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		//		demo1();
