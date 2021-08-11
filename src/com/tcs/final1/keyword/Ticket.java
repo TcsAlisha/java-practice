@@ -1,13 +1,18 @@
 package com.tcs.final1.keyword;
 
-public final class Ticket {
+public class Ticket {
 	private final String movie="Sholay";
 	private float price;
 	
-	public final void sell() {
+	public void sell() {
 		
 	}
 	public final void sell(float price) {
+		
+	}
+}
+class Illegalticket extends Ticket{
+	public void sell() {
 		
 	}
 }
