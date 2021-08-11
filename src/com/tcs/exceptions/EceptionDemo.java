@@ -4,13 +4,17 @@ public class EceptionDemo {
 	public static void main(String[] args) {
 		try {
 			demo2();
+		} catch(InvalidInputException e) {
+			
 		} catch (MyCheckedException e) {
 			e.printStackTrace();
+		} finally {
+			System.out.println("Always called");
 		}
 		//		demo1();
 		
 	}
-	private static void demo2() throws MyCheckedException{
+	private static void demo2() throws MyCheckedException, InvalidInputException{
 		throw new MyCheckedException();
 	}
 	
