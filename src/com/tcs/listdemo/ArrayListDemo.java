@@ -3,10 +3,24 @@ package com.tcs.listdemo;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ArrayListDemo {
 	public static void main(String[] args) {
 		List<Integer> numbers = createList();
+		//SortList(numbers);
+		FilterList(numbers);
+	}
+	private static void FilterList(List<Integer> numbers) {
+		numbers.forEach((number) -> {
+			System.out.println(number % 2 == 0);
+			//break;
+		});
+		List<Integer> filtered = numbers.stream().filter((number) -> number % 2 == 0).collect(Collectors.toList());
+		System.out.println(filtered);
+	}
+	
+	private static void SortList(List<Integer> numbers) {
 		System.out.println(numbers);
 		numbers.sort(new Comparator<Integer>() {
 
