@@ -11,7 +11,15 @@ public class ArrayListDemo {
 		List<Integer> numbers = createList();
 		// SortList(numbers);
 		// FilterList(numbers);
-		AddNumbers(numbers);
+		//AddNumbers(numbers);
+		otherOps(numbers);
+	}
+	
+	private static void otherOps(List<Integer> numbers) {
+		System.out.println(numbers);
+		//numbers.remove(11);
+		numbers.add(4,80);
+		System.out.println(numbers);
 	}
 
 	private static void AddNumbers(List<Integer> numbers) {
